@@ -23,7 +23,7 @@ function askQuestion() {
   // TODO 1.2b: Ask candidate the question and assign the response as candidateAnswer //
   let array = ["Who was the first American woman in space?" , "True or false: 5 kilometer == 5000 meters?" , "(5 + 3)/2 * 10 = ?" , "Given the array [8, 'Orbit', 'Trajectory', 45], what entry is at index 2?" , "What is the minimum crew size for the ISS?"];
  
- let array1 = ["Sally Ride" , "True" , "40" , "Trajectory" , "3"];
+ let array1 = ["sally ride" , "true" , "40" , "trajectory" , "3"];
  
  
 }
@@ -39,7 +39,7 @@ let array = ["Who was the first American woman in space?" , "True or false: 5 ki
  answer.push(input.question(array[i]));
  if (answer[i] === array1[i]) {
    numberOfCorrectAnswers++;
-   console.log(`Your Answer: ${answer[i].toLowerCase()}`);
+   console.log(`Your Answer: ${array1[i].toLowerCase()}`);
    
  } else console.log(`Your Answer: ${answer[i].toLowerCase()}`);
       
@@ -51,7 +51,7 @@ let array = ["Who was the first American woman in space?" , "True or false: 5 ki
 
   let grade = (numberOfCorrectAnswers) / (array.length) * 100;
   console.log(`>>> Overall Grade: ${grade}% (${numberOfCorrectAnswers} of ${array.length} are correct.) <<<`);
-  if (grade >= 70) {
+  if (grade >= 60) {
     console.log(">>> Status: PASSED <<<");
   } else {
     console.log(">>> Status: FAILED <<<");
