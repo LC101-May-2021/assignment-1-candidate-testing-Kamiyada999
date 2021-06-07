@@ -25,28 +25,30 @@ function askQuestion() {
  
  let array1 = ["Sally Ride" , "True" , "40" , "Trajectory" , "3"]
  
- let numberOfCorrectAnswers = 0;
-
- let answer = []
- for (let i = 0; i < array.length; i++) {
- answer.push(input.question(array[i]));
- if (answer[i] === array[i]) {
-   console.log(`Your Answer: ${answer[i].toLowerCase()}`)
- } else console.log(`Your Answer: ${answer[i].toLowerCase()}`)
-      numberOfCorrectAnswers++
- console.log(`Correct Answer: ${array1[i].toLowerCase()}`)
- }
+ 
 }
 
 
   // TODO 1.2c: Let the candidate know if they have answered the question correctly or incorrectly // 
 function gradeQuiz(candidateAnswers) {
 numberOfCorrectAnswers = 0;
-array = ["Who was the first American woman in space?" , "True or false: 5 kilometer == 5000 meters?" , "(5 + 3)/2 * 10 = ?" , "Given the array [8, 'Orbit', 'Trajectory', 45], what entry is at index 2?" , "What is the minimum crew size for the ISS?"]
+let array = ["Who was the first American woman in space?" , "True or false: 5 kilometer == 5000 meters?" , "(5 + 3)/2 * 10 = ?" , "Given the array [8, 'Orbit', 'Trajectory', 45], what entry is at index 2?" , "What is the minimum crew size for the ISS?"]
+ let answer = []
+ let array1 = ["Sally Ride" , "True" , "40" , "Trajectory" , "3"]
+ for (let i = 0; i < array.length; i++) {
+ answer.push(input.question(array[i]));
+ if (answer[i] !== array1[i]) {
+   console.log(`Your Answer: ${answer[i].toLowerCase()}`)
+ } else console.log(`Your Answer: ${answer[i].toLowerCase()}`)
+      numberOfCorrectAnswers++
+ console.log(`Correct Answer: ${array1[i].toLowerCase()}`)
+ }
+
+
 
 
   let grade = (numberOfCorrectAnswers) / (array.length) * 100;
-  console.log(`>>> Overall Grade: ${grade}% (${numberOfCorrectAnswers} of ${array.length} are correct.`)
+  console.log(`>>> Overall Grade: ${grade}% (${numberOfCorrectAnswers} of ${array.length} are correct.) <<<`)
   if (grade >= 70) {
     console.log(">>> Status: PASSED <<<");
   } else {
