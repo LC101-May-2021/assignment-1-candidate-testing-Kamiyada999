@@ -34,7 +34,7 @@ function gradeQuiz(candidateAnswers) {
 let numberOfCorrectAnswers = 0;
 let array = ["Who was the first American woman in space?" , "True or false: 5 kilometer == 5000 meters?" , "(5 + 3)/2 * 10 = ?" , "Given the array [8, 'Orbit', 'Trajectory', 45], what entry is at index 2?" , "What is the minimum crew size for the ISS?"];
  let answer = [];
- let array1 = ["Sally Ride" , "True" , "40" , "Trajectory" , "3"];
+ let array1 = ["sally ride" , "true" , "40" , "trajectory" , "3"];
  for (let i = 0; i < array.length; i++) {
  answer.push(input.question(array[i]));
  if (answer[i] === array1[i]) {
