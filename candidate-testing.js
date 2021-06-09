@@ -23,7 +23,7 @@ function askQuestion() {
   // TODO 1.2b: Ask candidate the question and assign the response as candidateAnswer //
   let array = ["Who was the first American woman in space?" , "True or false: 5 kilometer == 5000 meters?" , "(5 + 3)/2 * 10 = ?" , "Given the array [8, 'Orbit', 'Trajectory', 45], what entry is at index 2?" , "What is the minimum crew size for the ISS?"];
  
- let array1 = ["sally ride" , "true" , "40" , "trajectory" , "3"];
+ let array1 = ["Sally Ride" , "true" , "40" , "Trajectory" , "3"];
  
  
 }
@@ -35,16 +35,16 @@ let numberOfCorrectAnswers = 0;
 let array = ["Who was the first American woman in space?" , "True or false: 5 kilometer == 5000 meters?" , "(5 + 3)/2 * 10 = ?" , "Given the array [8, 'Orbit', 'Trajectory', 45], what entry is at index 2?" , "What is the minimum crew size for the ISS?"];
  let answer = [];
  let array1 = ["sally ride" , "true" , "40" , "trajectory" , "3"];
- let array2 = ["Sally Ride" , "True" , "40" , "Trajectory" , "3"];
+
  for (let i = 0; i < array1.length; i++) {
  answer.push(input.question(array[i]));
  if (answer[i] === array1[i]) {
    numberOfCorrectAnswers++;
-   console.log(`Your Answer: ${array1[i].toLowerCase()}`);
+   console.log(`Your Answer: ${array1[i]}`);
    
- } else console.log(`Your Answer: ${answer[i].toLowerCase()}`);
+ } else console.log(`Your Answer: ${answer[i]}`);
       
- console.log(`Correct Answer: ${array1[i].toLowerCase()}`);
+ console.log(`Correct Answer: ${array1[i]}`);
  }
 
 
