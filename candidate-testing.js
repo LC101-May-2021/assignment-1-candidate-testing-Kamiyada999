@@ -36,9 +36,9 @@ let array = ["Who was the first American woman in space?" , "True or false: 5 ki
  let answer = [];
  let array1 = ["sally ride" , "true" , "40" , "trajectory" , "3"];
  let array2 = ["Sally Ride" , "True" , "40" , "Trajectory" , "3"];
- for (let i = 0; i < array.length; i++) {
+ for (let i = 0; i < array1.length; i++) {
  answer.push(input.question(array[i]));
- if (answer[i] === array1[i] || answer [i]) {
+ if (answer[i] === array1[i]) {
    numberOfCorrectAnswers++;
    console.log(`Your Answer: ${array1[i].toLowerCase()}`);
    
