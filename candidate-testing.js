@@ -21,10 +21,10 @@ function askForName() {
 
 function askQuestion() {
   // TODO 1.2b: Ask candidate the question and assign the response as candidateAnswer //
-  let array = ["Who was the first American woman in space? " , "True or false: 5000 meters = 5 kilometers. " , "(5 + 3)/2 * 10 = ? " , "Given the array [8, 'Orbit', 'Trajectory', 45], what entry is at index 2? " , "What is the minimum crew size for the ISS? "];
+  let array = ["1) Who was the first American woman in space? " , "2) True or false: 5000 meters = 5 kilometers. " , "3) (5 + 3)/2 * 10 = ? " , "4) Given the array [8, 'Orbit', 'Trajectory', 45], what entry is at index 2? " , "5) What is the minimum crew size for the ISS? "];
  
- let array1 = ["sally ride" , "true" , "40" , "trajectory" , "3"];
- let array2 = ["Sally Ride" , "True" , "40" , "Trajectory" , "3"];
+ let array1 = ["sally ride" , "true" , 40 , "trajectory" , 3];
+ let array2 = ["Sally Ride" , "True" , 40 , "Trajectory" , 3];
  
  
 }
@@ -34,7 +34,7 @@ function askQuestion() {
 function gradeQuiz(candidateAnswers) {
 
 let numberOfCorrectAnswers = 0;
-let array = ["Who was the first American woman in space? " , "True or false: 5000 meters = 5 kilometers. " , "(5 + 3)/2 * 10 = ? " , "Given the array [8, 'Orbit', 'Trajectory', 45], what entry is at index 2? " , "What is the minimum crew size for the ISS? "];
+let array = ["1) Who was the first American woman in space? " , "2) True or false: 5000 meters = 5 kilometers. " , "3) (5 + 3)/2 * 10 = ? " , "4) Given the array [8, 'Orbit', 'Trajectory', 45], what entry is at index 2? " , "5) What is the minimum crew size for the ISS? "];
  let answer = [];
  let array1 = ["sally ride" , "true" , "40" , "trajectory" , "3"];
  let array2 = ["Sally Ride" , "True" , "40" , "Trajectory" , "3"];
