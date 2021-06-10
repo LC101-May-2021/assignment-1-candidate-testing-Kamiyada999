@@ -46,13 +46,13 @@ let numberOfCorrectAnswers = 0;
 
 
 
-  let grade = 0; 
+let grade = 0; 
 for (let i=0; i < 5; i++){
     if (candidateAnswers[i].toLowerCase() == correctAnswers[i].toLowerCase()){
     
     
       numberOfCorrectAnswers++
-    }
+  }
   }
 grade = (numberOfCorrectAnswers/questions.length) * 100;
 
